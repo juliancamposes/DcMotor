@@ -25,7 +25,7 @@ DcMotor::DcMotor (int pinVelocidad, int pin1, int pin2) { //usamos 3 pines, el p
 
 	}
 
-void DcMotor::avanzar(int velocidad) {
+void DcMotor::avance(int velocidad) {
 
 	if (velocidad >255){
 		velocidad = 255; //con esto la velocidad nunca superara al maximo de la placa		
@@ -45,7 +45,7 @@ void DcMotor::parar() {
 
 	}
 
-void DcMotor::atras(int velocidad) {
+void DcMotor::retroceso(int velocidad) {
 	
 	
 	if (velocidad >255){

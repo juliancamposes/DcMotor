@@ -18,8 +18,8 @@ Desarrollada para proyecto personal
 class DcMotor {  //creamos las variables de la clase
 public:
 DcMotor(int pinVelocidad, int pin1, int pin2);
-void avanzar(int velocidad);
-void atras(int velocidad);
+void avance(int velocidad);
+void retroceso(int velocidad);
 void parar();
 private:
 int _pin1;

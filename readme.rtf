@@ -1,0 +1,26 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red52\green110\blue183;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa300
+
+\f0\fs28 \cf2 /* DcMotor.cc- Library for control of dc motors. Created by Loleando.com , December 21, 2012 {\field{\*\fldinst{HYPERLINK "http://www.loleando.com/"}}{\fldrslt \cf3 www.loleando.com}} Released for personal project */\
+/* DcMotor.cc- Libreria para el control de un motor DC. Creada por J. Campos para Loleando.com , 21 Diciembre, 2012 {\field{\*\fldinst{HYPERLINK "http://www.loleando.com/"}}{\fldrslt \cf3 www.loleando.com}} Desarrollada para proyecto personal */\
+En el siguiente documento explicaremos el funcionamiento de la librer\'eda:\
+Lo primero que veremos es la creaci\'f3n del objeto motor:\
+(En el ejemplo se llama motor1 el objeto, puede tener cualquier nombre)\
+DcMotor motor1(pinPWM, Pin1, Pin2) [poner los n\'fameros de los pines]\
+El pinPWM sirve para controlar la velocidad del motor, es de car\'e1cter obligado declarar un pon PWM ya que esta librer\'eda est\'e1 creada para trabajar con velocidades.\
+Si no deseara trabajar la velocidad, tan solo tendr\'eda que poner cualquier pin (vale uno mismo del motor) que de 5V para trabajar en velocidad m\'e1xima.\
+El pin PWM debe estar conectado al pin enable de nuestro circuito.\
+RECORDAD es una librer\'eda dise\'f1ada para trabajar con velocidad, as\'ed que es obligado\
+Pin1 y pin2 ser\'e1 los pinas que est\'e9 conectado el motor.\
+Las funciones son las siguientes:\
+motor1.avanzar(velocidad); Donde la velocidad es un valor int desde 0 a 255. Con esta funci\'f3n el motor se mover\'e1 en una direcci\'f3n.\
+motor1.parar(); el motor se parar\'e1, no hay que poner velocidad entre los par\'e9ntesis.\
+motor1.atras(velocidad); el motor ir\'e1 al sentido contrario del de avanzar, es necesario poner la velocidad.\
+Esta es la gu\'eda simple de la librer\'eda DcMotor. Recuerden, es de car\'e1cter obligado poner un pin PWM, o en su caso poner un pin que est\'e9 en OUTPUT y de 5V.\
+Espero que halla sido de ayuda.\
+\pard\pardeftab720
+\cf2 Saludos.}

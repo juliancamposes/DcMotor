@@ -30,11 +30,11 @@ Pin1 y pin2 será los pinas que esté conectado el motor.
 
 Las funciones son las siguientes:
 
-motor1.avanzar(velocidad); Donde la velocidad es un valor int desde 0 a 255. Con esta función el motor se moverá en una dirección.
+motor1.avance(velocidad); Donde la velocidad es un valor int desde 0 a 255. Con esta función el motor se moverá en una dirección.
 
 motor1.parar(); el motor se parará, no hay que poner velocidad entre los paréntesis.
 
-motor1.atras(velocidad); el motor irá al sentido contrario del de avanzar, es necesario poner la velocidad.
+motor1.retroceso(velocidad); el motor irá al sentido contrario del de avanzar, es necesario poner la velocidad.
 
 
 Esta es la guía simple de la librería DcMotor. Recuerden, es de carácter obligado poner un pin PWM, o en su caso poner un pin que esté en OUTPUT y de 5V.

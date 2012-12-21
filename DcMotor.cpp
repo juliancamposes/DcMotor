@@ -21,12 +21,15 @@ DcMotor::DcMotor (int pinVelocidad, int pin1, int pin2) { //usamos 3 pines, el p
 
 	pinMode(_pin1, OUTPUT); //ponemos los pines del motor como OUTPUT
 	pinMode(_pin2, OUTPUT);
-	pinMode(_pinVelocidad, OUTPUT); //tambien ponemos el pin de PWM como OUTPUT, si no usamos el PWM será o 5V o 0V
+	pinMode(_pinVelocidad, OUTPUT); //tambien ponemos el pin de PWM como OUTPUT, si no usamos el PWM serï¿½ o 5V o 0V
 
 	}
 
 void DcMotor::avanzar(int velocidad) {
 
+	if (velocidad >255){
+		velocidad = 255; //con esto la velocidad nunca superara al maximo de la placa		
+	}
 	digitalWrite(_pin1, HIGH); //Al avanzar usamos logica 1-0, donde
 	digitalWrite(_pin2, LOW);
 	analogWrite(_pinVelocidad, velocidad); //la velocidad va de 0 a 255 (0-> OV, 255->5V)
@@ -36,14 +39,19 @@ void DcMotor::avanzar(int velocidad) {
 
 void DcMotor::parar() {
 
-	digitalWrite(_pin1, LOW); //Para parar dejamos de mandar señal usando
+	digitalWrite(_pin1, LOW); //Para parar dejamos de mandar seï¿½al usando
 	digitalWrite(_pin2, LOW); //la logica 00
 
 
 	}
 
 void DcMotor::atras(int velocidad) {
-
+	
+	
+	if (velocidad >255){
+		velocidad = 255; //con esto la velocidad nunca superara al maximo de la placa		
+	}
+	
 	digitalWrite(_pin1, LOW); //para ir al sentido contrario cambiamos la polaridad
 	digitalWrite(_pin2, HIGH); //siendo 0-1
 	analogWrite(_pinVelocidad, velocidad); //y se manda al pin enable del driver

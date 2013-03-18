@@ -40,6 +40,6 @@ motor1.retroceso(velocidad); el motor irá al sentido contrario del de avanzar, 
 Esta es la guía simple de la librería DcMotor. Recuerden, es de carácter obligado poner un pin PWM, o en su caso poner un pin que esté en OUTPUT y de 5V.
 
 
-Espero que halla sido de ayuda.
+Espero que haya sido de ayuda.
 
 Saludos.

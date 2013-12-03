@@ -18,7 +18,7 @@ Lo primero que veremos es la creación del objeto motor:
 
 DcMotor motor1(pinPWM, Pin1, Pin2) [poner los números de los pines]
 
-El pinPWM sirve para controlar la velocidad del motor, es de carácter obligado declarar un pon PWM ya que esta librería está creada para trabajar con velocidades.
+El pinPWM sirve para controlar la velocidad del motor, es de carácter obligado declarar un pin PWM ya que esta librería está creada para trabajar con velocidades.
 
 Si no deseara trabajar la velocidad, tan solo tendría que poner cualquier pin (vale uno mismo del motor) que de 5V para trabajar en velocidad máxima.
 
@@ -26,7 +26,7 @@ El pin PWM debe estar conectado al pin enable de nuestro circuito.
 
 RECORDAD es una librería diseñada para trabajar con velocidad, así que es obligado
 
-Pin1 y pin2 será los pinas que esté conectado el motor.
+Pin1 y pin2 será los pines donde esté conectado el motor.
 
 Las funciones son las siguientes:
 

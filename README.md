@@ -1,13 +1,7 @@
 /* DcMotor.cc- Library for control of dc motors.
-Created by Loleando.com , December 21, 2012
-www.loleando.es
+Created by Julián Campos , December 21, 2012
+www.juliancampos.com
 Released for personal project
-*/
-
-/* DcMotor.cc- Libreria para el control de un motor DC.
-Creada por J. Campos para Loleando.com , 21 Diciembre, 2012
-www.loleando.es
-Desarrollada para proyecto personal
 */
 
 En el siguiente documento explicaremos el funcionamiento de la librería:

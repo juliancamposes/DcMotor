@@ -1,6 +1,6 @@
 /* DcMotor.cc- Library for control of dc motors.
 Created by Julián Campos , December 21, 2012
-www.juliancampos.com
+www.juliancampos.es
 Released for personal project
 */
 
